@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
 </head>
-<body>
+<body id="body1">
     
-     <!--weigfiwef-->
-        <div class="container">
+     
+        <div class="container" id="reposition">
             <div class="left">
                 <div class="title">
                     <h1>Lorem ipsunm</h1>
@@ -25,26 +25,26 @@
             
             <div class="right">
                 <div class="dropdown">
-                    <div class="navlist">
-                        <a href="#home" class="icon">
-                            <img class="menu-btn"src="menu.png" alt="No view" onclick="togglemenu()">
-                        </a >
-
-                            <a href="#home" class="nitem active">HOME</a>
-                            <a href="#home" class="nitem">SHOP</a>
-                            <a href="#home" class="nitem">ABOUT</a>
-                            <a href="#home" class="nitem">INSIGHTS</a>
-                            <a href="#home" class="nitem">CONTACTS</a>
-                            <a  href="#home"class="nitem">OTHER</a>
-                            <a href="#home" class="noption nitem">OPTIONS</a>
-                      
+                    <div class="navlist" id="menulist">
+                        
+                        <a href="#home" class="nitem active">HOME</a>
+                        <a href="#home" class="nitem">SHOP</a>
+                        <a href="#home" class="nitem">ABOUT</a>
+                        <a href="#home" class="nitem">INSIGHTS</a>
+                        <a href="#home" class="nitem">CONTACTS</a>
+                        <a  href="#home"class="nitem">OTHER</a>
+                        <a href="#home" class="noption nitem">OPTIONS</a>
+                        
                     </div>
+                    <a href="#home" class="icon">
+                        <img class="menu-btn" id="menu-1" src="menu.png" alt="No view" onclick="togglemenu()">
+                    </a >
                 </div>
             </div>
         </div>
             <div class="name">NAME</div>
     
-        <div class="center">
+        <div class="center" id="center2">
             <div class="tcenter">
                 <h1>Lorem ipsunm</h1>
             </div>
@@ -75,6 +75,28 @@
                 </a>
             </div>
         </div>
+
+
+        <script>
+            var menulist=document.getElementById("menulist");
+            var repos=document.getElementById("reposition");
+            var btn=document.getElementById("menu-1");
+            var center2=document.getElementById("center2")
+            menulist.style.maxHeight = "0vh";
+            
+            function togglemenu() {
+                if (menulist.style.maxHeight == "0px") {
+                    menulist.style.maxHeight = "600px";
+                    // menulist.style.top="-45vh";;
+                }
+
+                else{
+                    menulist.style.maxHeight = "0px";
+                    // menulist.style.top="-45vh";
+                }
+            }
+        </script>
+
 
 </body>
 </html>
