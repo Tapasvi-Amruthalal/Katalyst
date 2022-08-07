@@ -317,8 +317,8 @@ body{
 .bottom{
     top: 70rem; 
     display: grid;
-    gap: 10vw;
-    margin: 20vh 0 0 10vw;
+    gap: 4rem;
+    margin: 20vh 0 10rem 10vw;
     grid-template-columns: 80vw;
     grid-template-rows: 65vh 65vh 65vh;  
 }
@@ -361,6 +361,7 @@ body{
     }   
     .bottom{
         top:93rem;
+        gap:7rem;
     }
     .contents{
         width:10rem;
