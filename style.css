@@ -36,6 +36,7 @@ color: black;
     font-size: 1.3em;
     text-decoration: none;
     transition: 0.7s;
+    box-shadow:0 12px 16px 0 #211f1f;
 }
 .nitem:hover{
     background-color: rgb(118, 114, 114);
@@ -47,13 +48,13 @@ color: black;
 /* CONTAINER FOR CENTER */
 .container{
     display: grid;
-    grid-template-columns: 50vw 40vw;
-    grid-template-rows: 70vh;
+    grid-template-columns: 50vw 37vw;
+    grid-template-rows: 37rem;
     justify-content: end;
     position: absolute;
     top: 0px;
     right: 0%;
-transition: all 0.8;
+    transition: all 0.8;
 
 }
 /* image for right  */
@@ -73,7 +74,7 @@ transition: all 0.8;
 }
 /* TITLE for left */
 .title{
-    padding: 30vh 0 1vh 0;
+    padding: 11rem 0 1vh 0;
     margin:0px;
     font-size: 1.8em;
     transition: 0.8s;
@@ -97,16 +98,18 @@ transition: all 0.8;
     color: white;
     margin-left: 2vw;
     font-size:1.2em;
-    transition: 0.8s;
-    padding: 3% 1.5%;
+    transition: 0.5s;
+    padding: 2.8%;
     word-wrap: none;
+
 }
 .btn:hover{
     color: black;
     background-color: white;
-    text-decoration: underline;
     transition: 0.5s;
     transition-delay: 0s;
+    box-shadow:0 12px 16px 0 #3f3c3c;
+    
 }
 /* RIGHT Section of Container */
 .right{
@@ -119,7 +122,7 @@ transition: all 0.8;
 /* CENTER CONTAINER for web page */
 .center{
    position: relative;
-   top:80vh;
+   top:40rem;
    height: 10vh;
     justify-content: center;
     margin:auto auto 40vh auto;
@@ -150,12 +153,12 @@ transition: all 0.8;
 /* bottom Container */
 .bottom{
     position: absolute;
-    top: 100vh;
+    top: 50rem;
     display: grid;
     gap: 4vw;
     margin: 5vh 0 20vh 10vw;
     grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 50vh;
+    grid-template-rows: 24rem;
     transition: 0.3s;
 }
 /* Images dimensions for the bottom portion */
@@ -164,13 +167,17 @@ transition: all 0.8;
     height: 95%;
     width: 100%;
 }
+.img2:hover{
+    box-shadow:0 12px 16px 0 #3f3c3c;
+}
+
 /* Contents link */
 .contents{
     text-decoration: none;
     color: #000;
     background-color: rgb(185, 185, 185);
-    height: 4vh;
-    width: 12vw;
+    height: 3rem;
+    width: 10rem;
     margin:-1.5vh auto;
     padding: 0;
     font-weight: 300px;
@@ -179,7 +186,6 @@ transition: all 0.8;
 }
 .contents:hover{
     background-color: rgb(98, 98, 98);
-
     transition: 0.5s;
 }
 
@@ -192,9 +198,11 @@ h2{
     display: flex;
     flex-direction: column;
 }
-/*MEDIA QUERY FOR RESPONSIVENESS*/
+
+/*MEDIA QUERY FOR RESPONSIVENESS TABLET VIEW*/
+
 @media screen and (max-width:725px){
-    body{
+body{
         margin: 0 0 0 0em;
     }
     /* TOP PORTION OF MOBILE VIEW */
@@ -209,11 +217,10 @@ h2{
         flex-direction: column;
         background-color: white;
         align-items: right;
-        
     }
     /* Styling for menu options */
-a.nitem{
-    
+    a.nitem{   
+    box-shadow:0 12px 16px 0 #ffffff;
     float: left;
     color: black;
     text-align: center;
@@ -225,6 +232,10 @@ a.nitem{
     padding:0;
     height: 4vh;
 }
+.nitem:hover{
+    background-color: rgb(143, 140, 140);
+    color:rgb(0, 0, 0);
+}
 #menulist{
     overflow: hidden;
     transition: 0.8s;
@@ -233,8 +244,8 @@ a.nitem{
 /* styling for menu icon image */
 .menu-btn{
     background-color: white;
-    height: 5vh;
-    width: 8vw;
+    height: 3rem;
+    width: 4rem;
     display: inline;
     float: right;
     position: absolute;
@@ -253,13 +264,13 @@ a.nitem{
 .container{
     display: grid;
     grid-template-columns: 100vw ;
-    grid-template-rows: 35vh 45vh ;
+    grid-template-rows: 43vh 45vh ;
     position: absolute;
     top: 10vh;
 }
 
 .center{
-    margin-top: 20vh;
+    margin-top: 20rem;
 }
 
 .left{  
@@ -288,15 +299,15 @@ a.nitem{
 }
 .btn{
     height: 5vh;
-    width: 30vw;
+    width: 35vw;
     background-color: black;
     color: white;
-    margin:auto;
-    padding: 2% 3% 5%;
+    margin: 4rem auto 0 10.8rem;
+    padding: 1em 1em 2em;
     text-align: center;
 }
 .bottom{
-    top: 110vh; 
+    top: 70rem; 
     display: grid;
     gap: 2vw;
     margin: 20vh 0 0 10vw;
@@ -319,23 +330,29 @@ a.nitem{
 }
 
 }
-
+/*MEDIA QUERY FOR RESPONSIVENESS MOBILE VIEW*/
 @media screen and (max-width:500px){
 
     .container{
-        grid-template-rows: 60vh 60vh ;
+        grid-template-rows: 35rem 60vh ;
     }
     
     .btn{
         height: 7vh;
-        width: 40vw;
-        padding: 1% 0;
+        width: 10rem;
+        /* padding: 1% 0; */
+        margin: 4rem 0 0 7.4rem;
+    
     }
 
     .center{
-        margin-top: 65vh;
+        margin-top: 35rem;
     }   
     .bottom{
-        top:170vh;
+        top:93rem;
+    }
+    .contents{
+        width:10rem;
+        padding:0.3rem 0 0.7rem;
     }
 }
