@@ -200,7 +200,7 @@ h2{
     /* TOP PORTION OF MOBILE VIEW */
     
     /* COntainer for the menulist */
-    .navlist{
+.navlist{
         position: absolute;
         top:-5vh;
         right: -0vw;
@@ -212,7 +212,7 @@ h2{
         
     }
     /* Styling for menu options */
-    a.nitem{
+a.nitem{
     
     float: left;
     color: black;
@@ -227,7 +227,7 @@ h2{
 }
 #menulist{
     overflow: hidden;
-    transition: 1s;
+    transition: 0.8s;
     transition-delay: 0.2s;
 }
 /* styling for menu icon image */
@@ -253,9 +253,13 @@ h2{
 .container{
     display: grid;
     grid-template-columns: 100vw ;
-    grid-template-rows: 35vh 25vh ;
+    grid-template-rows: 35vh 45vh ;
     position: absolute;
     top: 10vh;
+}
+
+.center{
+    margin-top: 20vh;
 }
 
 .left{  
@@ -292,14 +296,12 @@ h2{
     text-align: center;
 }
 .bottom{
-
     top: 110vh; 
     display: grid;
     gap: 2vw;
-    margin: 5vh 0 0 10vw;
+    margin: 20vh 0 0 10vw;
     grid-template-columns: 80vw;
-    grid-template-rows: 50vh 50vh 50vh;
-    
+    grid-template-rows: 50vh 50vh 50vh;  
 }
 .contents{
     
@@ -312,5 +314,28 @@ h2{
     text-align: center;
     word-break: keep-all;
 }
+.bimage{
+    margin-bottom: 5vh;
+}
 
+}
+
+@media screen and (max-width:500px){
+
+    .container{
+        grid-template-rows: 60vh 60vh ;
+    }
+    
+    .btn{
+        height: 7vh;
+        width: 40vw;
+        padding: 1% 0;
+    }
+
+    .center{
+        margin-top: 65vh;
+    }   
+    .bottom{
+        top:170vh;
+    }
 }
