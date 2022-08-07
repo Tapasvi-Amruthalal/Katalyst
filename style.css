@@ -320,7 +320,7 @@ body{
     gap: 4rem;
     margin: 20vh 0 10rem 10vw;
     grid-template-columns: 80vw;
-    grid-template-rows: 65vh 65vh 65vh;  
+    grid-template-rows: 75vh 75vh 75vh;  
 }
 .bimage{
     margin-bottom: 5vh;
@@ -361,7 +361,7 @@ body{
     }   
     .bottom{
         top:93rem;
-        gap:7rem;
+        gap:4rem;
     }
     .contents{
         width:10rem;
