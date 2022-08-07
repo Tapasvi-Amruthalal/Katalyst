@@ -210,13 +210,14 @@ body{
     /* COntainer for the menulist */
 .navlist{
         position: absolute;
-        top:-5vh;
+        top:-1.7em;
         right: -0vw;
         font-size: 1.2em;
         display: flex;
         flex-direction: column;
         background-color: white;
         align-items: right;
+        width: 12em;
     }
     /* Styling for menu options */
     a.nitem{   
@@ -225,10 +226,10 @@ body{
     color: black;
     text-align: center;
     padding:1vw;
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: none;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
     padding:0;
     height: 4vh;
 }
@@ -249,7 +250,7 @@ body{
     display: inline;
     float: right;
     position: absolute;
-    top: -10vh;
+    top: -5em;
     right: 0;
 }
 
@@ -341,7 +342,7 @@ body{
         height: 7vh;
         width: 10rem;
         /* padding: 1% 0; */
-        margin: 4rem 0 0 7.4rem;
+        margin: 4rem 0px 0px 9.399999999999999rem;
     
     }
 
