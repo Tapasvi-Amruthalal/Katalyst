@@ -1,7 +1,7 @@
+/* GENERAL BODY TAGS */
+
 *{
     font-family: sans-serif;
-    
-    
 }
 body{
     margin:0 0 0 1vw;
@@ -11,10 +11,8 @@ body{
 h1{
     margin: 0px;
 }
-.icon{
-    display: none;
-}
-.icon2{
+/* NAVBAR/MENU DROPDOWM */
+.menu-btn{
     display: none;
 }
 .name{
@@ -37,6 +35,7 @@ color: black;
     padding:1vw;
     font-size: 1.3em;
     text-decoration: none;
+    transition: 0.7s;
 }
 .nitem:hover{
     background-color: rgb(118, 114, 114);
@@ -45,7 +44,7 @@ color: black;
 .noption{
     display: none;
 }
-
+/* CONTAINER FOR CENTER */
 .container{
     display: grid;
     grid-template-columns: 50vw 40vw;
@@ -54,28 +53,32 @@ color: black;
     position: absolute;
     top: 0px;
     right: 0%;
+transition: all 0.8;
+
 }
+/* image for right  */
 .main-img{
     box-sizing: border-box;
     height: 100%;
     width: 100%;
     
 }
+/* LEFT OF TOP SECTION WITH CONTENTS */
 .left{
-    
     text-align: left;
-    
     align-content: center ;
     padding-top: 0;
     display: flex;
     flex-direction: column;
 }
-
+/* TITLE for left */
 .title{
     padding: 30vh 0 1vh 0;
     margin:0px;
     font-size: 1.8em;
+    transition: 0.8s;
 }
+/* PARAGRAPH for left */
 .tpara{
     position: relative;
     width:50%;
@@ -83,7 +86,10 @@ color: black;
     font-size: 1.8em;
     line-height: 1.3em;
     margin: 0 0 2em 0;
+    transition: 0.8s;
+    transition-delay: 0.3s;
 }
+/* BUTTON VIEW MORE */
 .btn{
     height: 70px;
     width:250px;
@@ -99,32 +105,37 @@ color: black;
     color: black;
     background-color: white;
     text-decoration: underline;
+    transition: 0.5s;
+    transition-delay: 0s;
 }
-
+/* RIGHT Section of Container */
 .right{
-
     background-image: url(image.jpg);
     background-position:center;
     background-size: cover;
-   
-
+    /* transition: 0.8s; */
 }
-
+/* ---------------CENTER------------------ */
+/* CENTER CONTAINER for web page */
 .center{
    position: relative;
    top:80vh;
    height: 10vh;
     justify-content: center;
     margin:auto auto 40vh auto;
+    transition: 0.8s;
 
 }
+/* TITLE for Center */
 .tcenter{
     padding: 10px 0 0 0;
     margin: 0px;
     text-align: center;
     font-size: 1.8em;
+    transition: 0.8s;
 
 }
+/* PARGRAPH for Center */
 .cpara{
     text-align: center;
     padding-top: 0.3em;
@@ -132,10 +143,12 @@ color: black;
     margin: auto ;
     font-size: 1.8em;
     line-height: 1.3em;
+    transition: 0.8s;
+    transition-delay: 0.8s;
 }
-
+/* -----------------------BOTTOM---------------------------- */
+/* bottom Container */
 .bottom{
-
     position: absolute;
     top: 100vh;
     display: grid;
@@ -143,13 +156,15 @@ color: black;
     margin: 5vh 0 20vh 10vw;
     grid-template-columns: 25vw 25vw 25vw;
     grid-template-rows: 50vh;
-    
+    transition: 0.3s;
 }
+/* Images dimensions for the bottom portion */
 .img2{
     box-sizing: border-box;
     height: 95%;
     width: 100%;
 }
+/* Contents link */
 .contents{
     text-decoration: none;
     color: #000;
@@ -172,47 +187,33 @@ h2{
     margin-top: 1em;
     margin: 0.5em 0  ;
 }
+/* CONTAINER for bottom images and link  */
 .bimage{
     display: flex;
     flex-direction: column;
 }
-
+/*MEDIA QUERY FOR RESPONSIVENESS*/
 @media screen and (max-width:725px){
-body{
-    margin: 0 0 0 0em;
-}
-
-.name{
-    display: inline;
-}
-.navlist{
-    position: absolute;
-    top:-10vh;
-    right: -0vw;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: right;
-    margin-right: 1vw;
-
-}
-
-.dropdown:hover .nitem{
-    display: block;
-    overflow: hidden;
-    transition: 0.5s;
-}
-/*  */
-.dropdown:hover + .container{
-
-    position: absolute;
-    top: 40vh;
-
-}
-
-.nitem{
-    display: none;
+    body{
+        margin: 0 0 0 0em;
+    }
+    /* TOP PORTION OF MOBILE VIEW */
+    
+    /* COntainer for the menulist */
+    .navlist{
+        position: absolute;
+        top:-5vh;
+        right: -0vw;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: right;
+        
+    }
+    /* Styling for menu options */
+    a.nitem{
+    
     float: left;
     color: black;
     text-align: center;
@@ -221,42 +222,38 @@ body{
     text-decoration: none;
     overflow: hidden;
     transition: 0.5s;
-    
+    padding:0;
+    height: 4vh;
 }
-.icon{
-    display: block; 
-    float: right;
+#menulist{
+    overflow: hidden;
+    transition: 1s;
+    transition-delay: 0.2s;
 }
-.icon2{
-    display: block; 
-    float: left; 
-    position: absolute;
-    top:10vh;
-}
-
+/* styling for menu icon image */
 .menu-btn{
     background-color: white;
     height: 5vh;
     width: 8vw;
-}
-
-.navlist:hover a.icon{
-    margin-left: auto;
-    display: block;
+    display: inline;
     float: right;
-
+    position: absolute;
+    top: -10vh;
+    right: 0;
 }
+
 .name{
     position: absolute; 
     left: 0;
     color: black;
     font-weight: 2em;
 }
-
+/* ---------------------- */
+/* middle container */
 .container{
     display: grid;
-    grid-template-columns: 50vw 50vw ;
-    grid-template-rows: 35vh ;
+    grid-template-columns: 100vw ;
+    grid-template-rows: 35vh 25vh ;
     position: absolute;
     top: 10vh;
 }
@@ -274,6 +271,7 @@ body{
     margin: 0 auto 2vh;
     text-align: center;
     font-size: 1.8em;
+    /* transition: 0.8s; */
 }
 .tpara{
     position: relative;
@@ -281,6 +279,8 @@ body{
     line-height: 1.3em;
     margin:  0 auto;
     text-align: center;
+    transition: 0.8s;
+    transition-delay: 0.3s;
 }
 .btn{
     height: 5vh;
@@ -291,11 +291,6 @@ body{
     padding: 2% 3% 5%;
     text-align: center;
 }
-.btn:hover{
-    color: black;
-    background-color: white;
-}
-
 .bottom{
 
     top: 110vh; 
@@ -307,7 +302,7 @@ body{
     
 }
 .contents{
-
+    
     background-color: grey;
     height: 4vh;
     width: 30vw;
@@ -317,4 +312,5 @@ body{
     text-align: center;
     word-break: keep-all;
 }
+
 }
