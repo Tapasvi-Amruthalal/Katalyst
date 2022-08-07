@@ -303,7 +303,10 @@ body{
     width: 35vw;
     background-color: black;
     color: white;
-    margin: 4rem auto 0 10.8rem;
+    position: absolute;
+    margin: auto;
+    left: 34vw;
+    top: 15em;
     padding: 1em 1em 2em;
     text-align: center;
 }
