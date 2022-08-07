@@ -101,7 +101,8 @@ color: black;
     transition: 0.5s;
     padding: 2.8%;
     word-wrap: none;
-
+    font-weight: bold;
+    cursor: pointer;
 }
 .btn:hover{
     color: black;
